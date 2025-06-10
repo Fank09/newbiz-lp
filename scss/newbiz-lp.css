@@ -219,6 +219,22 @@ header .hero-container .right .img-container {
 #content #service .service-container .item-3 .img-container {
   background: #d2e2ff;
 }
+#content #partner {
+  background: #f6f6f6;
+}
+#content #partner .section {
+  flex-direction: column;
+}
+#content #partner .section .logo-container {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#content #partner .section .logo-container .logo {
+  width: 200px;
+  height: auto;
+  margin: 0 2rem;
+}
 #content #steps .section {
   flex-direction: column;
 }
@@ -251,7 +267,8 @@ header .hero-container .right .img-container {
   font-size: 56px;
 }
 #content #steps .steps-container .item .text {
-  font-size: 1.2em;
+  text-align: center;
+  font-size: 1em;
   font-weight: 500;
 }
 #content #steps .steps-container .arrow {
@@ -736,6 +753,11 @@ footer .copyright {
     padding-bottom: 0;
     background: #d8c7ff;
   }
+  #content #partner .section .logo-container .logo {
+    width: 150px;
+    height: auto;
+    margin: 0 1rem;
+  }
   #content #steps .steps-container {
     flex-direction: column;
     padding: 0;
@@ -755,8 +777,8 @@ footer .copyright {
     color: black;
     font-size: 64px;
   }
-  #content #steps .steps-container .text {
-    font-size: 1.2em;
+  #content #steps .steps-container .item .text {
+    font-size: 1.5em;
   }
   #content #steps .steps-container .arrow {
     padding: 0;
