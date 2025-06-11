@@ -119,6 +119,7 @@ header {
       gap: 1.5rem;
       h1 {
         font-size: 3em;
+        line-height: 150%;
       }
       .tagline {
         font-size: 1.2em;
@@ -822,28 +823,31 @@ footer {
         padding: 0;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 0;
         .item {
-          padding: 1rem 0;
-          gap: 1rem;
+          width: 100%;
+          padding: 0;
+          gap: 0;
+          flex-direction: row;
+          justify-content: flex-start;
           .icon {
-            width: 150px;
-            height: 150px;
+            width: 90px;
+            height: 90px;
+            margin-right: 1.5rem;
 
             .material-symbols-outlined {
-              color: black;
-              font-size: 64px;
+              font-size: 40px;
             }
           }
           .text {
-            font-size: 1.5em;
+            font-size: 1.2em;
           }
         }
         .arrow {
           padding: 0;
           rotate: 90deg;
           .material-symbols-rounded {
-            font-size: 80px;
+            font-size: 60px;
           }
         }
       }

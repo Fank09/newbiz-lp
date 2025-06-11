@@ -121,6 +121,7 @@ header .hero-container .left {
 }
 header .hero-container .left h1 {
   font-size: 3em;
+  line-height: 150%;
 }
 header .hero-container .left .tagline {
   font-size: 1.2em;
@@ -763,29 +764,32 @@ footer .copyright {
     padding: 0;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0;
   }
   #content #steps .steps-container .item {
-    padding: 1rem 0;
-    gap: 1rem;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+    flex-direction: row;
+    justify-content: flex-start;
   }
   #content #steps .steps-container .item .icon {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
+    margin-right: 1.5rem;
   }
   #content #steps .steps-container .item .icon .material-symbols-outlined {
-    color: black;
-    font-size: 64px;
+    font-size: 40px;
   }
   #content #steps .steps-container .item .text {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   #content #steps .steps-container .arrow {
     padding: 0;
     rotate: 90deg;
   }
   #content #steps .steps-container .arrow .material-symbols-rounded {
-    font-size: 80px;
+    font-size: 60px;
   }
   #content #testimonial .slider-wrapper {
     padding: 4rem 0;
