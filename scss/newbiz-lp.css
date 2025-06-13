@@ -221,10 +221,11 @@ header .hero-container .right .img-container {
   background: #d2e2ff;
 }
 #content #partner {
-  background: #f6f6f6;
+  background: #fafafa;
 }
 #content #partner .section {
   flex-direction: column;
+  padding: 4rem 0;
 }
 #content #partner .section .logo-container {
   align-items: center;
@@ -234,7 +235,7 @@ header .hero-container .right .img-container {
 #content #partner .section .logo-container .logo {
   width: 200px;
   height: auto;
-  margin: 0 2rem;
+  margin: 0 4rem;
 }
 #content #steps .section {
   flex-direction: column;
@@ -404,8 +405,14 @@ header .hero-container .right .img-container {
   background-clip: text;
   color: transparent;
 }
+#content #form {
+  background: linear-gradient(to bottom, white, #d5efff);
+}
 #content #form .section {
   flex-direction: column;
+}
+#content #form .section .title {
+  margin-bottom: 4rem;
 }
 #content #form .section .title h2 {
   color: #4382e7;
@@ -419,6 +426,7 @@ header .hero-container .right .img-container {
   font-family: "Poppins", "Noto Sans JP", sans-serif;
 }
 #content #form .section .ui.form {
+  background: white;
   flex-direction: column;
   align-items: center;
   width: 600px;
@@ -441,8 +449,7 @@ header .hero-container .right .img-container {
 #content #form .section .ui.form .field input:not([type]),
 #content #form .section .ui.form .field input[type=email],
 #content #form .section .ui.form .field input[type=tel],
-#content #form .section .ui.form .field input[type=text],
-#content #form .section .ui.form .field textarea {
+#content #form .section .ui.form .field input[type=text] {
   border-radius: 1px !important;
   -webkit-border-radius: 10px !important;
   -moz-border-radius: 10px !important;
@@ -454,7 +461,17 @@ header .hero-container .right .img-container {
 #content #form .section .ui.form .field input:not([type])::placeholder,
 #content #form .section .ui.form .field input[type=email]::placeholder,
 #content #form .section .ui.form .field input[type=tel]::placeholder,
-#content #form .section .ui.form .field input[type=text]::placeholder,
+#content #form .section .ui.form .field input[type=text]::placeholder {
+  color: light gray;
+}
+#content #form .section .ui.form .field textarea {
+  border-radius: 1px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+  border: 1px solid #979797 !important;
+}
 #content #form .section .ui.form .field textarea::placeholder {
   color: light gray;
 }

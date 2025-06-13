@@ -230,9 +230,10 @@ header {
     }
   }
   #partner {
-    background: #f6f6f6;
+    background: #fafafa;
     .section {
       flex-direction: column;
+      padding: 4rem 0;
       .logo-container {
         align-items: center;
         justify-content: center;
@@ -240,7 +241,7 @@ header {
         .logo {
           width: 200px;
           height: auto;
-          margin: 0 2rem;
+          margin: 0 4rem;
         }
       }
     }
@@ -429,9 +430,11 @@ header {
     }
   }
   #form {
+    background: linear-gradient(to bottom, white, #d5efff);
     .section {
       flex-direction: column;
       .title {
+        margin-bottom: 4rem;
         h2 {
           color: #4382e7;
         }
@@ -445,6 +448,7 @@ header {
         font-family: "Poppins", "Noto Sans JP", sans-serif;
       }
       .ui.form {
+        background: white;
         flex-direction: column;
         align-items: center;
         width: 600px;
@@ -465,8 +469,7 @@ header {
           input:not([type]),
           input[type="email"],
           input[type="tel"],
-          input[type="text"],
-          textarea {
+          input[type="text"] {
             border-radius: 1px !important;
             -webkit-border-radius: 10px !important;
             -moz-border-radius: 10px !important;
@@ -474,6 +477,17 @@ header {
             -o-border-radius: 10px !important;
             border: 1px solid #979797 !important;
             height: 56px;
+            &::placeholder {
+              color: light gray;
+            }
+          }
+          textarea {
+            border-radius: 1px !important;
+            -webkit-border-radius: 10px !important;
+            -moz-border-radius: 10px !important;
+            -ms-border-radius: 10px !important;
+            -o-border-radius: 10px !important;
+            border: 1px solid #979797 !important;
             &::placeholder {
               color: light gray;
             }
