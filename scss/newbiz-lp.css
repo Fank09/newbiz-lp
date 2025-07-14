@@ -100,7 +100,7 @@ header .nav {
   padding: 2rem 5rem;
 }
 header .nav .logo {
-  width: 200px;
+  width: 150px;
 }
 header .nav .button-group {
   align-items: center;
@@ -113,19 +113,30 @@ header .nav .button-group .btn {
 header .hero-container {
   padding: 2rem 0 5rem 5rem;
   justify-content: space-between;
+  align-items: center;
 }
 header .hero-container .left {
   width: 50%;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 header .hero-container .left h1 {
-  font-size: 3em;
+  color: #4382e7;
+  font-size: 3.5em;
   line-height: 150%;
 }
 header .hero-container .left .tagline {
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 200%;
+}
+header .hero-container .left .btn {
+  background: linear-gradient(-135deg, #0C99FF, #908bf7);
+}
+header .hero-container .left .btn:hover {
+  filter: contrast(1.5);
+  -webkit-filter: contrast(1.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
 }
 header .hero-container .right {
   width: 45%;
@@ -689,7 +700,7 @@ footer .copyright {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
     order: 2;
   }
