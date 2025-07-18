@@ -28,7 +28,11 @@ button {
 }
 //Padding Left - Right = 5rem in each Section//
 .section {
-  padding: 4rem 5rem;
+  // padding: 4rem 5rem;
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 p {
   padding: 0;
@@ -97,7 +101,10 @@ header {
   .nav {
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 5rem;
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
     .logo {
       width: 150px;
     }
@@ -111,7 +118,10 @@ header {
     }
   }
   .hero-container {
-    padding: 2rem 0 5rem 5rem;
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem 0;
     justify-content: space-between;
     align-items: center;
     .left {
@@ -120,33 +130,33 @@ header {
       gap: 1rem;
       h1 {
         color: #4382e7;
-        font-size: 3.5em;
+        font-size: 4em;
         line-height: 150%;
       }
       .tagline {
-        font-size: 1.5em;
+        font-size: 1.85em;
         line-height: 200%;
       }
       .btn {
-        background: linear-gradient(-135deg, #0C99FF, #908bf7);
+        background: linear-gradient(-135deg, #0c99ff, #908bf7);
         &:hover {
-          filter:  contrast(1.5);
-          -webkit-filter:  contrast(1.5);
+          filter: contrast(1.5);
+          -webkit-filter: contrast(1.5);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
+        }
       }
     }
     .right {
-      width: 45%;
+      width: 50%;
       height: auto;
       .img-container {
         padding: 0 0 0 2rem;
         background: white;
-        border-radius: 32px 0 0 32px;
-        -webkit-border-radius: 32px 0 0 32px;
-        -moz-border-radius: 32px 0 0 32px;
-        -ms-border-radius: 32px 0 0 32px;
-        -o-border-radius: 32px 0 0 32px;
+        border-radius: 32px;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        -ms-border-radius: 32px;
+        -o-border-radius: 32px;
       }
     }
   }
@@ -704,6 +714,7 @@ footer {
 @media only screen and (max-width: 768px) {
   //Setting
   .section {
+    width: 100%;
     padding: 3rem 16px;
   }
   .title {
@@ -716,6 +727,7 @@ footer {
 
   header {
     .nav {
+      width: 100%;
       padding: 1.5rem 16px;
       .logo {
         width: 120px;
@@ -729,7 +741,9 @@ footer {
     }
     .hero-container {
       flex-direction: column;
-      padding: 2rem 0 2rem 16px;
+      width: 100%;
+      // padding: 2rem 0 2rem 16px;
+      padding: 2rem 16px;
       align-items: center;
       justify-content: center;
       gap: 2rem;
@@ -741,10 +755,10 @@ footer {
         text-align: center;
         order: 2;
         h1 {
-          font-size: 2.5em;
+          font-size: 3em;
         }
         .tagline {
-          font-size: 1.2em;
+          font-size: 1.5em;
           line-height: 200%;
         }
       }
@@ -753,11 +767,6 @@ footer {
         .img-container {
           padding: 0 0 0 2rem;
           background: white;
-          border-radius: 32px 0 0 32px;
-          -webkit-border-radius: 32px 0 0 32px;
-          -moz-border-radius: 32px 0 0 32px;
-          -ms-border-radius: 32px 0 0 32px;
-          -o-border-radius: 32px 0 0 32px;
         }
       }
     }
