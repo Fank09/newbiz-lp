@@ -11,6 +11,7 @@ body {
   -webkit-overflow-scrolling: touch;
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 .material-symbols-outlined {
@@ -91,6 +92,25 @@ h3 {
   font-size: 2.5em;
   text-align: center;
   font-weight: 600;
+}
+
+#complete {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+#complete header {
+  background: transparent;
+}
+#complete .section {
+  flex-grow: 1;
+  flex-direction: column;
+}
+#complete .section .text {
+  font-size: 1.2em;
+  line-height: 150%;
+  text-align: center;
 }
 
 header {
@@ -622,6 +642,7 @@ footer {
   padding: 3rem 4rem;
   background: black;
   color: rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
 }
 footer .footer-container {
   width: 100%;
